@@ -1,6 +1,6 @@
 lint:
-	mdl -r ~MD013,~MD029,~MD033 README.md
+	mdl --git-recurse --rules ~MD013
 
 test:
 	# Some URLs could be flaky, try twice in case the first execution fails.
-	bash run_awesome_bot.sh || bash run_awesome_bot.sh
+	./run_awesome_bot.sh || ./run_awesome_bot.sh
